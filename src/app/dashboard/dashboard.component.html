@@ -7,3 +7,8 @@
     </div>
   </a>
 </div>
+<button (click)="changePageLength()">change page length</button>
+<input  [(ngModel)]="pageSize" />
+<table datatable #datatable id="datatable" [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+</table>
+<app-hero-search></app-hero-search>
